@@ -1,7 +1,28 @@
 // Specific CSS for your home-page
+
+// first-row
+.first-row {
+  margin-top: 5px;
+}
+
+.first-row-links {
+  a {
+    font-weight: bolder;
+    font-size: 13px;
+    padding-right: 10px;
+  }
+}
+
+.first-row-menu-applications {
+  font-size: 16px;
+  margin-left: 10px;;
+}
+
+
+//content
 .homepage-title {
   color: white;
   font-family: 'Roboto', sans-serif;
-  font-size: 80px;
+  font-weight: 700;
   margin-top: 38px;
 }
