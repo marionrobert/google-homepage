@@ -19,10 +19,48 @@
 }
 
 
-//content
+//milieu de page
 .homepage-title {
   color: white;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  margin-top: 38px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
+  font-size: 80px;
+  margin-top: 76px;
+  margin-bottom: 38px;
+  text-align: center;
 }
+
+.search-bar {
+  text-align: center;
+  background-color: yellow;
+
+  form {
+    position: relative;
+    background-color: red;;
+  }
+
+  input {
+    border-radius: 20px;
+    padding: 5px 25px;
+    font-size: 15px;
+  }
+}
+
+.fa-magnifying-glass {
+  color: grey;
+}
+
+.fa-microphone {
+  color: blue;
+}
+
+// .fa-microphone {
+//   position: absolute;
+//   top: 10%;
+//   left: 30px;
+// }
+
+// donner taille maximale au form
+// et donner taille 100% pour le input
+// et fixer le microphone et la loupe maintenant que le form a une taille fixe
+// utilité de la div search-bar ?
