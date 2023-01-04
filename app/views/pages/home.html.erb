@@ -23,25 +23,63 @@
 
 
   <%# les icônes %>
-  <div>
-    <a href="https://outlook.live.com/owa/">Outlook</a>
-    <a href="https://www.netflix.com/fr/login?nextpage=https%3A%2F%2Fwww.netflix.com%2Fbrowse">Netflix</a>
-    <a href="https://www.linkedin.com/in/marion-robert-468558171/">LinkedIn</a>
-    <a href="https://accounts.google.com/v3/signin/identifier?dsh=S1527185073%3A1672738470735496&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Fmy-drive&followup=https%3A%2F%2Fdrive.google.com%2Fdrive%2Fmy-drive&osid=1&passive=1209600&service=wise&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AeAAQh50qKNHx5rrr9fXSQQXeHUXTl3z8UtpDYtGq28fXhrwnqmm18eAs-DvxlJ89l31zknVZa3blg">Mon Drive</a>
-    <a href="https://www.facebook.com/">Facebook</a>
-    <a href="https://assure.ameli.fr/PortailAS/appmanager/PortailAS/assure?_nfpb=true&_pageLabel=as_deconnexion_page">Compte ameli</a>
 
-    <a href="">Ajouter un raccourci</a>
+
+  <div class="all-icons">
+    <a href="https://outlook.live.com/owa/" class="link-icon">
+      <i class="fa-solid fa-envelope icon" style="color:black;"></i>
+      <div class="title-icon">
+        <span>Outlook</span>
+      </div>
+    </a>
+    <a href="https://www.netflix.com/fr/login?nextpage=https%3A%2F%2Fwww.netflix.com%2Fbrowse">
+      <i class="fa-solid fa-n icon" style="color:red;"></i>
+      <div class="title-icon">
+        <span>Netflix</span>
+      </div>
+    </a>
+    <a href="https://www.linkedin.com/in/marion-robert-468558171/">
+      <i class="fa-brands fa-linkedin icon" style="color:blue;"></i>
+      <div class="title-icon">
+        <span>LinkedIn</span>
+      </div>
+    </a>
+    <a href="https://accounts.google.com/v3/signin/identifier?dsh=S1527185073%3A1672738470735496&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Fmy-drive&followup=https%3A%2F%2Fdrive.google.com%2Fdrive%2Fmy-drive&osid=1&passive=1209600&service=wise&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AeAAQh50qKNHx5rrr9fXSQQXeHUXTl3z8UtpDYtGq28fXhrwnqmm18eAs-DvxlJ89l31zknVZa3blg">
+      <i class="fa-brands fa-google-drive icon" style="color:green;"></i>
+      <div class="title-icon">
+        <span>Mon drive</span>
+      </div>
+    </a>
+    <a href="https://www.facebook.com/">
+      <i class="fa-brands fa-square-facebook icon" style="color:blue;"></i>
+      <div class="title-icon">
+        <span>Facebook</span>
+      </div>
+    </a>
+    <a href="https://assure.ameli.fr/PortailAS/appmanager/PortailAS/assure?_nfpb=true&_pageLabel=as_deconnexion_page">
+      <i class="fa-solid fa-briefcase-medical icon" style="color:blue;"></i>
+      <div class="title-icon">
+        <span>Compte ameli</span>
+      </div>
+    </a>
+
+    <a href="">
+      <i class="fa-solid fa-plus icon" style="color:black;"></i>
+      <div class="title-icon">
+        <span>Ajouter un racourci</span>
+      </div>
+    </a>
+
     <%# qui ouvre une pop-up %>
     <div class="pop-up-raccourci">
-    <form action="">
-      <label for="">Nom</label>
-      <input type="text">
-      <label for="">URL</label>
-      <input type="text">
-      <button>Annuler</button>
-      <button>OK</button>
-    </form>
+      <form action="" class="pop-up-raccourci">
+        <label for="">Nom</label>
+        <input type="text">
+        <label for="">URL</label>
+        <input type="text">
+        <button>Annuler</button>
+        <button>OK</button>
+      </form>
     </div>
   </div>
 
