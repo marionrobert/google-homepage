@@ -48,6 +48,10 @@ form.search-bar {
   input:focus::placeholder {
     color: transparent;
   }
+
+  input:focus {
+    outline: none;
+  }
 }
 
 .fa-magnifying-glass {
@@ -84,4 +88,13 @@ form.search-bar {
   background-color: white;
   padding: 10px;
   border-radius: 50%;
+}
+
+.link-icon {
+  // padding: 10px 0;
+}
+
+.link-icon:hover {
+  border-radius: 3px;
+  background-color: rgba(117, 190, 218, 0.5); /* 50% transparent */
 }
