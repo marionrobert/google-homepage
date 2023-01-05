@@ -10,7 +10,21 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;700&display=swap" rel="stylesheet">    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
   </head>
 
-  <body>
+  <body class="d-flex flex-column min-vh-100">
     <%= yield %>
   </body>
+
+  <%# footer %>
+  <footer class="mt-auto p-2">
+    <div class="d-flex justify-content-between">
+      <div>
+        <i class="fa-solid fa-link"></i>
+        <a href="https://www.google.com/sky/">Photo: NASA Image Library</a>
+      </div>
+      <div>
+            <i class="fa-solid fa-pencil"></i>
+      </div>
+
+    </div>
+  </footer>
 </html>

@@ -16,5 +16,6 @@ export default class extends Controller {
   cancel(event){
     event.preventDefault();
     this.formRaccourciTarget.classList.remove("show");
+    this.formRaccourciTarget.reset();
   }
 }
