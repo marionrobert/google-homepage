@@ -34,7 +34,8 @@
   <%# les icônes %>
 
 
-  <div class=" container">
+  <div class="container" data-controller="popup">
+
     <div class="row justify-content-center all-icons">
 
     <div class="col-sm-3 pt-3 link-icon" >
@@ -81,8 +82,8 @@
       </a>
     </div>
 
-    <div class="col-sm-3 pt-3 link-icon">
-      <a href="https://assure.ameli.fr/PortailAS/appmanager/PortailAS/assure?_nfpb=true&_pageLabel=as_deconnexion_page">
+    <div class="col-sm-3 pt-3 link-icon" >
+      <a href="https://assure.ameli.fr/PortailAS/appmanager/PortailAS/assure?_nfpb=true&_pageLabel=as_deconnexion_page" >
         <%= image_tag "icons/hospital_icon.ico" , class: 'icon', size: "45x45" %>
         <div class="title-icon">
           <span>Compte ameli</span>
@@ -91,7 +92,7 @@
     </div>
 
     <div class="col-sm-3 pt-3 link-icon">
-      <a href="">
+      <a href="" data-action="click->popup#display">
         <%= image_tag "icons/plus_icon.png" , class: 'icon', size: "45x45" %>
         <div class="title-icon">
           <span>Ajouter un racourci</span>
@@ -99,28 +100,23 @@
       </a>
     </div>
 
-
-
-
+    <%# qui ouvre une pop-up %>
+    <form action="" class="pop-up-raccourci unshow" id="popup-raccourci" data-popup-target="formRaccourci">
+      <h6>Ajouter un raccourci</h6>
+      <label for="">Nom</label>
+      <input type="text">
+      <label for="">URL</label>
+      <input type="text">
+      <button class="annuler" data-action="click->popup#cancel">Annuler</button>
+      <button class="ok">OK</button>
+    </form>
 
     </div>
+
   </div>
 
-  <%# qui ouvre une pop-up %>
-  <form action="" class="pop-up-raccourci" id="popup-raccourci">
-    <h6>Ajouter un raccourci</h6>
-    <label for="">Nom</label>
-    <input type="text">
-    <label for="">URL</label>
-    <input type="text">
-    <button class="annuler">Annuler</button>
-    <button class="ok">OK</button>
-  </form>
 
 
-  <div>
-  <img src="" alt="">
-  </div>
 
   <%# footer %>
   <div>

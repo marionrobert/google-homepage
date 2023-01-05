@@ -75,6 +75,7 @@ form.search-bar {
   margin-top: 30px;
   max-width: 500px;
   text-align: center;
+  position: relative;
 }
 
 .title-icon {
@@ -90,10 +91,6 @@ form.search-bar {
   border-radius: 50%;
 }
 
-.link-icon {
-  // padding: 10px 0;
-}
-
 .link-icon:hover {
   border-radius: 3px;
   background-color: rgba(117, 190, 218, 0.5); /* 50% transparent */
@@ -104,10 +101,14 @@ form.search-bar {
 // form popup
 form.pop-up-raccourci {
   width: 450px;
-  color: grey;
+  color: rgb(48, 48, 48);
   background-color: white;
   border-radius: 7px;
   padding: 10px;
+  z-index: 1;
+  position: absolute;
+  text-align: left;
+  visibility: hidden;
 
   h6{
     font-size: smaller;
@@ -120,7 +121,7 @@ form.pop-up-raccourci {
   input {
     width: 100%;
     border-radius: 4px;
-    background-color: #DCDCDC;
+    background-color: #eeeded;
     border: none;
   }
 
@@ -149,4 +150,13 @@ form.pop-up-raccourci {
   button.annuler:hover {
     background-color: rgba(200, 221, 228, 0.9);
   }
+
+}
+
+// .unshow {
+//   visibility: hidden;
+// }
+
+.pop-up-raccourci.show {
+  visibility: visible;
 }
