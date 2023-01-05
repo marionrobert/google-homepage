@@ -98,3 +98,55 @@ form.search-bar {
   border-radius: 3px;
   background-color: rgba(117, 190, 218, 0.5); /* 50% transparent */
 }
+
+
+
+// form popup
+form.pop-up-raccourci {
+  width: 450px;
+  color: grey;
+  background-color: white;
+  border-radius: 7px;
+  padding: 10px;
+
+  h6{
+    font-size: smaller;
+  }
+
+  label {
+    width: 100%;
+    font-size: 10px;
+  }
+  input {
+    width: 100%;
+    border-radius: 4px;
+    background-color: #DCDCDC;
+    border: none;
+  }
+
+  button{
+    border-radius: 4px;
+    margin-top: 15px;
+    padding: 8px 16px;
+    font-size: 10px;
+    font-weight: bold;
+    border-width: 1px;
+    border-color:  #DCDCDC;
+    box-shadow: 0;
+
+  }
+
+  button.annuler {
+    color: blue;
+    background-color: white;
+  }
+
+  button.ok {
+    color: white;
+    background-color: blue;
+  }
+
+  button.annuler:hover {
+    background-color: rgba(200, 221, 228, 0.9);
+  }
+}
